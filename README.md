@@ -1,6 +1,6 @@
 # Coffee Shop Landing Page
 
-A responsive coffee shop website with a dynamic landing page, interactive cart system, rotating news banner, and receipt functionality — all built with HTML, CSS, and JavaScript.
+A responsive coffee shop website with a dynamic landing page, interactive cart system, rotating news banner, and receipt functionality. All built with HTML, CSS, and JavaScript.
 
 Users can:
 - Browse a menu with product images
