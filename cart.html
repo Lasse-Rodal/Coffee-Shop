@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart – Coffee Shop</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body class="cart-page">
+    <header>
+    <a href="index.html" class="logo">Coffee Shop</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#menu-section">Menu</a>
+      <a href="index.html#visit-section">Contact</a>
+    </nav>
+  </header>
+
+  <main class="cart-page container">
+    <h2>Your Order</h2>
+    <div id="order-list" class="order-list"></div>
+    <p><strong>Total:</strong> ¥<span id="order-total">0</span></p>
+    <button id="place-order" class="button">Place Order</button>
+    <div id="receipt" class="receipt hidden">
+        <h3>☕ Coffee Shop Receipt</h3>
+        <div id="receipt-items"></div>
+        <p><strong>Total:</strong> ¥<span id="receipt-total">0</span></p>
+        <p class="thank-you">Thank you for your order!</p>
+      </div>
+    <br><br>
+    <a href="index.html" class="button secondary">← Continue Shopping</a>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

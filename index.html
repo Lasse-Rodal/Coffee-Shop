@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1fd33c722d.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="landing-page">
+        <header>
+            <a href="#" class="logo">Coffee Shop</a>
+          
+            <!-- Regular nav menu -->
+            <nav class="nav-links">
+              <a href="#">Home</a>
+              <a href="#menu-section">Menu</a>
+              <a href="#visit-section">Contact</a>
+              <a href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                (<span id="cart-count">0</span>)
+              </a>
+            </nav>
+          
+            <!-- Hamburger icon for mobile -->
+            <div class="hamb">
+              <i class="fas fa-bars"></i>
+            </div>
+          
+            <!-- Mobile nav menu -->
+            <nav class="mobile-nav">
+              <a href="#">Home</a>
+              <a href="#menu-section">Menu</a>
+              <a href="#visit-section">Contact</a>
+              <a href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                (<span id="cart-count-mobile">0</span>)
+              </a>
+            </nav>
+          </header>
+
+        <div class="landing-content">
+            <h2>Handcrafted coffee in the heart of the city</h2>
+            <a href="#menu-section" class="button">Order Now</a>
+            <a href="#visit-section" class="button secondary">Find Us</a>
+        </div>
+    </div>
+
+    <div class="news-banner">
+        <div class="news-rotator">
+          <div class="news-item active">☕ New seasonal drinks now available – try the maple oat latte!</div>
+          <div class="news-item">🍪 Freshly baked cookies every morning until sold out!</div>
+          <div class="news-item">🎉 Loyalty cards now available – your 10th coffee is on us!</div>
+        </div>
+      </div>
+
+    <section class="our-story">
+        <div class="story-container reverse">
+          <div class="story-image">
+            <img src="media/images/our_story.jpg" alt="Interior of the coffee shop">
+          </div>
+          <div class="story-text">
+            <h2>Our Story</h2>
+            <p>
+              Born from a love for handcrafted coffee and community, Coffee Shop began as a cozy hideaway in the heart of Tokyo. What started with one barista, a vintage espresso machine, and a dream to make people slow down and savor, has grown into a local favorite where friends gather and new ideas brew.
+            </p>
+            <p>
+              Every cup we serve is made with care—from ethically sourced beans to the final sprinkle of cinnamon. Whether you're staying for a chat or grabbing your go-to on the run, we’re here to make your day a little warmer.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu-section" class="menu-section">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="menu-grid">
+      
+          <div class="menu-item">
+            <img src="media/images/hot_beverages.jpg" alt="Latte">
+            <h3>Latte</h3>
+            <p>Rich espresso blended with steamed milk and a hint of foam.</p>
+            <button class="button" onclick="addToCart(1)">Add to Cart</button>
+          </div>
+      
+          <div class="menu-item">
+            <img src="media/images/cold_beverages.jpg" alt="Iced Coffee">
+            <h3>Iced Coffee</h3>
+            <p>Chilled and refreshing, brewed slowly for a smooth finish.</p>
+            <button class="button" onclick="addToCart(2)">Add to Cart</button>
+          </div>
+      
+          <div class="menu-item">
+            <img src="media/images/refreshments.jpg" alt="Citrus Drink">
+            <h3>Citrus Sparkler</h3>
+            <p>Bright sparkling water infused with orange, lemon, and lime.</p>
+            <button class="button" onclick="addToCart(3)">Add to Cart</button>
+          </div>
+      
+          <div class="menu-item">
+            <img src="media/images/special_combos.jpg" alt="Croissant Combo">
+            <h3>Croissant Combo</h3>
+            <p>A warm latte paired with two soft Croissants.</p>
+            <button class="button" onclick="addToCart(4)">Add to Cart</button>
+          </div>
+      
+          <div class="menu-item">
+            <img src="media/images/desserts.jpg" alt="Cake Slice">
+            <h3>Chocolate Cake Slice</h3>
+            <p>Decadent, moist chocolate cake with a rich ganache topping.</p>
+            <button class="button" onclick="addToCart(5)">Add to Cart</button>
+          </div>
+      
+          <div class="menu-item">
+            <img src="media/images/cookies.jpg" alt="Cookies">
+            <h3>Cookies</h3>
+            <p>Freshly baked — crunchy outside, gooey inside. Pack of 3.</p>
+            <button class="button" onclick="addToCart(6)">Add to Cart</button>
+          </div>
+      
+        </div>
+      </section>
+      
+      
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+      
+          <div class="testimonial-card">
+            <img src="media/images/yuki_t.jpg" alt="Yuki T." class="profile-pic">
+            <p>"Hands down the best coffee in town. I stop by every morning before work."</p>
+            <h4>– Yuki T.</h4>
+          </div>
+      
+          <div class="testimonial-card">
+            <img src="media/images/daniel_k.jpg" alt="Daniel K." class="profile-pic">
+            <p>"The atmosphere is so cozy, and the baristas actually remember my name!"</p>
+            <h4>– Daniel K.</h4>
+          </div>
+      
+          <div class="testimonial-card">
+            <img src="media/images/aiko_m.jpg" alt="Aiko M." class="profile-pic">
+            <p>"That maple oat latte? Life-changing. I bring all my friends here."</p>
+            <h4>– Aiko M.</h4>
+          </div>
+      
+        </div>
+      </section>
+
+      <section id="visit-section" class="visit-section">
+        <h2>Let’s share a cup</h2>
+        <div class="visit-grid">
+          <div class="visit-box">
+            <h3>📍 Address</h3>
+            <p>Coffee Shop<br>123 Brew Street<br>Tokyo, Japan</p>
+          </div>
+          <div class="visit-box">
+            <h3>⏰ Opening Hours</h3>
+            <p>
+              Mon – Fri: 8:00 AM – 6:00 PM<br>
+              Sat – Sun: 9:00 AM – 7:00 PM
+            </p>
+          </div>
+        </div>
+      </section>
+    
+      <footer class="site-footer">
+        <div class="footer-content">
+      
+          <!-- Newsletter Signup -->
+          <div class="footer-section newsletter">
+            <h3>📬 Join Our Newsletter</h3>
+            <p>Be the first to know about new drinks, events, and sweet deals.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+      
+          <!-- Contact Info -->
+          <div class="footer-section contact">
+            <h3>📞 Contact Us</h3>
+            <p>Email: hello@coffeeshop.jp<br>Phone: +81 90-1234-5678</p>
+          </div>
+      
+          <!-- Social Media Links -->
+          <div class="footer-section social">
+            <h3>📱 Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      
+        </div>
+      
+        <p class="footer-bottom">&copy; 2025 Coffee Shop. All rights reserved.</p>
+      </footer>
+      <div id="toast" class="toast">Item added to cart!</div>
+      <script src="script.js"></script>
+</body>
+</html>
